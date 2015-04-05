@@ -104,17 +104,27 @@ kill = withFocused killWindow
 windows :: (WindowSet -> WindowSet) -> X ()
 windows f = do
     old <- gets windowset
+    frf <- asks (focusRaisesFloat . config)
     let oldvisible = concatMap (W.integrate' . W.stack . W.workspace) $ W.current old : W.visible old
         newwindows = W.allWindows ws \\ W.allWindows old
         oldFloats = M.keys $ M.difference (W.floating old) (W.floating ws)
-        ws = f old
+        mws = f old
+        ws = if frf && maybe False (\fw -> M.member fw (W.floating mws)) (W.peek mws)
+                then W.shiftMaster mws
+                else mws
     mapM_ removeFloatDec oldFloats
     XConf { display = d , normalBorder = nbc, focusedBorder = fbc } <- ask
 
     mapM_ setInitialProperties newwindows
 
     whenJust (W.peek old) $ \otherw -> io $ setWindowBorder d otherw nbc
+
     modify (\s -> s { windowset = ws })
+
+    {-whenJust (W.peek ws) $ \ffw -> -}
+        {-when (M.member ffw (W.floating ws) && frf) $ do -}
+            {-io $ raiseWindow d ffw-}
+            {-modify (\s -> s { windowset = W.shiftMaster ws })-}
 
     -- notify non visibility
     let tags_oldvisible = map (W.tag . W.workspace) $ W.current old : W.visible old
@@ -312,6 +322,9 @@ focus w = local (\c -> c { mouseFocused = True }) $ withWindowSet $ \s -> do
     mnew <- maybe (return Nothing) (fmap (fmap stag) . uncurry pointScreen)
             =<< asks mousePosition
     root <- asks theRoot
+    {-frf <- asks (focusRaisesFloat . config)-}
+    {-when (frf && M.member w (W.floating s)) $-}
+        {-withDisplay $ \d -> io $ raiseWindow d w-}
     case () of
         _ | W.member w s && W.peek s /= Just w -> windows (W.focusWindow w)
           | Just new <- mnew, w == root && curr /= new
@@ -603,6 +616,12 @@ applyMaxSizeHint (mw,mh) x@(w,h) =
 --------------------------------------------------------------
 -- Floating Shenanigans 
 -------------------------------------------------------------
+
+-- | Raise float window and make the master
+{-raiseFloat :: Window -> X ()-}
+{-raiseFloat w = withWindowSet $ \ws -> -}
+    {-when (M.member w (W.floating ws) && w /= head (W.index ws)) $-}
+        {-windows $ W.shiftMaster  . W.focusWindow w-}
 
 -- | If the window is decorated, hide it's decoration
 hideFloatDec :: Window -> X ()

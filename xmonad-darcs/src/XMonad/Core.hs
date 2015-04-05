@@ -117,6 +117,7 @@ data XConfig l = XConfig
     , startupHook        :: !(X ())              -- ^ The action to perform on startup
     , focusFollowsMouse  :: !Bool                -- ^ Whether window entry events can change focus
     , floatFocusFollowsMouse  :: !Bool                -- ^ Whether window entry events can change focus in the floating layer
+    , focusRaisesFloat   :: !Bool                -- ^ Whether focus raises thea float
     , clickJustFocuses   :: !Bool                -- ^ False to make a click which changes focus to be additionally passed to the window
     , clientMask         :: !EventMask           -- ^ The client events that xmonad is interested in
     , rootMask           :: !EventMask           -- ^ The root events that xmonad is interested in
