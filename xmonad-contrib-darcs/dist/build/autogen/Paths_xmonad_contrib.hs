@@ -12,14 +12,13 @@ import Prelude
 catchIO :: IO a -> (Exception.IOException -> IO a) -> IO a
 catchIO = Exception.catch
 
-
 version :: Version
-version = Version {versionBranch = [0,12], versionTags = []}
+version = Version [0,12] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/jeffrey/.cabal/bin"
-libdir     = "/home/jeffrey/.cabal/lib/x86_64-linux-ghc-7.8.4/xmonad-contrib-0.12"
-datadir    = "/home/jeffrey/.cabal/share/x86_64-linux-ghc-7.8.4/xmonad-contrib-0.12"
+libdir     = "/home/jeffrey/.cabal/lib/x86_64-linux-ghc-7.10.1/xmona_JCpKcgGshcHLwzx6lZoAFQ"
+datadir    = "/home/jeffrey/.cabal/share/x86_64-linux-ghc-7.10.1/xmonad-contrib-0.12"
 libexecdir = "/home/jeffrey/.cabal/libexec"
 sysconfdir = "/home/jeffrey/.cabal/etc"
 

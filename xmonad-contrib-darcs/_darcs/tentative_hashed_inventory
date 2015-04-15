@@ -1,0 +1,784 @@
+pristine:5fa62c2795013868fc9dc02f2af53efe39b9376cad7666a2a6adc03a1c7cf535
+Starting with inventory:
+0000027232-ac350b8a7f8be864d41ce50a4c42c5147639331f240782ee19aa96f4ce803ddb
+[TAG 0.11
+Adam Vogt <vogt.adam@gmail.com>**20130101014231
+ Ignore-this: 57cf32412fd1ce912811cb7fafe930f5
+] 
+hash: 0000020522-d41204244926d1bbaed377db40bfa27373d31fe4a26f7914353611fb5dfe7f58
+[Add authorspellings file for `darcs show authors'.
+Adam Vogt <vogt.adam@gmail.com>**20130101040031
+ Ignore-this: c3198072ebc6a71d635bec4d8e2c78fd
+ 
+ This authorspellings file includes a couple people who've contributed to xmonad
+ (not XMonadContrib). When people have multiple addresses, the most recent one
+ has been picked.
+] 
+hash: 0000005165-60103730ca00df7a354bdf4965805ac2669bc01f61fc9d6137d135db52c5e150
+[Remove first-hidden restriction from X.A.DynamicWorkspaces.removeWorkspace'
+Dmitri Iouchtchenko <johnnyspoon@gmail.com>**20121231214148
+ Ignore-this: 55fb0859e9a5f476a834ecbdb774aac8
+] 
+hash: 0000001498-ef06ba5f88fe8223ef4043a479b460f15b079e5b34a1725c2b6ddafd1c0d87de
+[Allow removing arbitrary workspaces
+Dmitri Iouchtchenko <johnnyspoon@gmail.com>**20121231214343
+ Ignore-this: 6fce4bd3d0c5337e5122158583138e74
+] 
+hash: 0000000255-b24e086439d7a2817b77b948d89647953f18c5616818fa70a68648ff418e3269
+[Add X.H.WorkspaceHistory
+Dmitri Iouchtchenko <johnnyspoon@gmail.com>**20130109023307
+ Ignore-this: c9e7ce33a944facc27481dde52c7cc80
+] 
+hash: 0000002737-c77cf9aaeec5d6c81ecec79683f1f22a7214370e86859540d9c3504aac7ad4c3
+[Make X.A.CycleWS not rely on hidden WS order
+Dmitri Iouchtchenko <johnnyspoon@gmail.com>**20130109023328
+ Ignore-this: 8717a154b33253c5df4e9a0ada4c2c3e
+] 
+hash: 0000001725-08556f81671be49cccb6a3f34a145629e3e600cb36271a19edf524a87867c585
+[Adapt ideas of issue 306 patch to a new modifier in L.TrackFloating
+Adam Vogt <vogt.adam@gmail.com>**20130112035701
+ Ignore-this: d54d27b71b97144ef0660f910fd464aa
+] 
+hash: 0000003217-eb10c2b4cd1325c10a7764e00f78e948c8693fb5cacc41e80d9a9db4c95611bc
+[Update L.TrackFloating.useTransient example code
+Adam Vogt <vogt.adam@gmail.com>**20130112041239
+ Ignore-this: e4e31cf1db742778c1d59d52fdbeed7a
+ 
+ Suggest useTransient goes to the right of trackFloating which is the
+ configuration actually tested.
+] 
+hash: 0000000592-a796d9403d3b71350fb6c112121193d0f15bc9c56065c0a44c00765e75b7df1f
+[SpawnOn modification for issue 523
+Adam Vogt <vogt.adam@gmail.com>**20130114014642
+ Ignore-this: 703f7dc0f800366b752f0ec1cecb52e5
+ 
+ This moves the function to help clean up the `Spawner' to the ManageHook
+ rather than in functions like spawnOn. Probably it makes no difference, the
+ reason is because there's one manageSpawn function but many different so this
+ way there are less functions to write.
+] 
+hash: 0000001292-d73f6c6d054ee7d23fecda63ee2ea9bfe0d421c396b446cf4a59ac9d5ed8dba6
+[order-unindexed-ws-last
+matthewhague@zoho.com**20120703222726
+ Ignore-this: 4af8162ee8b16a60e8fd62fbc915d3c0
+ 
+ Changes the WorkspaceCompare module's comparison by index to put workspaces without an index last (rather than first).
+] 
+hash: 0000000734-26a61cb5323fa6b4f7cbca91eba0afaeb86901baae1e31ea3c1b9426a4d1dd84
+[spawn command when no completion is available (if alwaysHighlight is True); changes commandToComplete in Prompt/Shell to complete the whole word instead of using getLastWord
+c.lopez@kmels.net**20130209190456
+ Ignore-this: ca7d354bb301b555b64d5e76e31d10e8
+] 
+hash: 0000000609-ea053b73934c33ad75c0edd7cb3df5e6c7105c4b9386e8a398fc0b2eab8c6ab3
+[Unconditionally set _NET_WORKAREA in ManageDocks
+Adam Vogt <vogt.adam@gmail.com>**20130117180851
+ Ignore-this: 9f57e53fba9573d8a92cf153beb7fe7a
+] 
+hash: 0000000512-14959eb70e2f9b6e33a175eeae0f627ce1ed5b9fa7679a5644b9e20138f44472
+[Add EWMH DEMANDS_ATTENTION support to UrgencyHook.
+Maarten de Vries <maarten@de-vri.es>**20130212181229
+ Ignore-this: 5a4b314d137676758fad9ec8f85ce422
+ 
+ Add support for the _NET_WM_STATE_DEMANDS_ATTENTION atom
+ by treating it the same way as the WM_HINTS urgency flag.
+ 
+] 
+hash: 0000003861-5ec248742146e478034b58b44f6329803ad97e7f2a4bb982d6aca6a2be3753a1
+[Export U.NamedActions.addDescrKeys per evaryont's request.
+Adam Vogt <vogt.adam@gmail.com>**20130217232619
+ Ignore-this: a694a0a3ece70b52fba6e8f688d86344
+] 
+hash: 0000000214-262de46cb9643bea5ff25280a4eae7cf73617404e3db561a6139db5791cf9cea
+[Note in U.NameActions that xmonad core can list default keys now
+Adam Vogt <vogt.adam@gmail.com>**20130217233026
+ Ignore-this: 937bff636fa88171932d5192fe8e290b
+] 
+hash: 0000000311-db1f565048dd0f33994db224a5739736ac7235be80df9080049f523e5ebb83ae
+[Allow to limit maximum row count in X.Prompt completion window
+Paul Fertser <fercerpav@gmail.com>**20130221122050
+ Ignore-this: 923656f02996f2de2b1336275392c5f9
+ 
+ On a keyboard-less device (such as a smartphone), where one has to use
+ an on-screen keyboard, the maximum completion window height must be
+ limited to avoid overlapping the keyboard.
+] 
+hash: 0000000897-fd68b5dc1ccf488730e3878ba4d24ce48166c0eda88e08c6522ef3967c03b494
+[getAtomName is now defined in the X11 library
+Daniel Wagner <daniel@wagner-home.com>**20130225180323
+ Ignore-this: 3b9e17c234679e98752a47c37132ee4e
+] 
+hash: 0000000620-1916a1462534e16b3f27d21d5e9aa926fd02467a3aa619542ccd6a30927a62e9
+[should bump X11 dependency, too, to make sure we have getAtomName
+Daniel Wagner <daniel@wagner-home.com>**20130225180527
+ Ignore-this: 260711f27551f18cc66afeb7b4846b9f
+] 
+hash: 0000000413-71687de18554aba66ac76eea9d1cfed762948c32c1c9ab9be46d58d4225845ea
+[Allow to specify the initial gaps' states in X.L.Gaps
+Paul Fertser <fercerpav@gmail.com>**20130222072232
+ Ignore-this: 31596d918d0050e36ce3f64f56205a64
+] 
+hash: 0000000684-220bc3b17f5fb0f6f06bc2c6784fedf0f5514851bedd290ca0df23727283a634
+[add whenCurrentOn to X.L.IndependentScreens
+Daniel Wagner <daniel@wagner-home.com>**20130408225251
+ Ignore-this: ceea3d391f270abc9ed8e52ce19fb1ac
+] 
+hash: 0000001765-17f33e54fc4a0d173c3977b4cc54755b2d09f40b2ac39e52c62607da0058f39d
+[minor fixes to the haddock markup in X.L.IndependentScreens
+Daniel Wagner <daniel@wagner-home.com>**20130411193849
+ Ignore-this: b6a139aa43fdb39fc1b86566c0c34c7a
+] 
+hash: 0000000350-8763dfa87193d4440cad76f4531585ab74462da70001fbf20d8df3d49c350223
+[XMonad.Config.Dmwit
+Daniel Wagner <daniel@wagner-home.com>**20130502012132
+ Ignore-this: 7402161579fd2e191b60a057d955e5ea
+] 
+hash: 0000013723-1f86718f5f929436fafaf7f5a6b962a9c5da51931b17d165fcb62f297c6e8fd3
+[warning police
+Daniel Wagner <daniel@wagner-home.com>**20130502012700
+ Ignore-this: ae7412ac77c57492a7ad6c5f8f50b9eb
+] 
+hash: 0000000586-dbe2567d0610c74e89aa17e8ed0149d906c81957551c2117405e4ad60bec44cf
+[since XMonad.Config.Dmwit mentions xmobar, we should include the associated .xmobarrc file
+Daniel Wagner <daniel@wagner-home.com>**20130503194055
+ Ignore-this: 2f6d7536df81eb767262b79b60eb1b86
+] 
+hash: 0000000683-ac69a901e1706c82a4ea0fce6dc428b2f300b33e7ca6ad2a5700e3adc174f442
+[Generalises modWorkspace to take any layout-transforming function
+gopsychonauts@gmail.com**20130501151425
+ Ignore-this: 28c7dc1f6216bb1ebdffef5434ccbcbd
+ 
+ modWorkspace already was capable of modifying the layout with an arbitrary
+ layout -> layout function, but its original type restricted it such that it
+ could only apply a single LayoutModifier; this was often inconvenient, as for
+ example it was not possible simply to compose LayoutModifiers for use with
+ modWorkspace.
+ 
+ This patch also reimplements onWorkspaces in terms of modWorkspaces, since with
+ the latter's less restrictive type this is now possible.
+] 
+hash: 0000002401-9379b2395b2f0eb88e68ae6e43b1da902df0e8637ea2809e63cbb3a4d59f6fba
+[Remove unnecessary contexts from L.MultiToggle
+Adam Vogt <vogt.adam@gmail.com>**20130217163356
+ Ignore-this: 6b0e413d8c3a58f62088c32a96c57c51
+] 
+hash: 0000000468-b097507f7ec938df2ca627dd38db5861d9f6b724d2266e20b8f586de02d00c85
+[Cache results from calcGap in ManageDocks
+Adam Vogt <vogt.adam@gmail.com>**20130425155811
+ Ignore-this: e5076fdbdfc68bc159424dd4e0f14456
+ 
+ http://www.haskell.org/pipermail/xmonad/2013-April/013670.html
+] 
+hash: 0000002981-18143094e135fdfdb874890d8542a05b892d22cf2b7eee87d7aa05feddaad5da
+[Added a module for linking workspaces
+quesel@informatik.uni-oldenburg.de**20110210165018
+ Ignore-this: 1dba2164cc3387409873d33099596d91
+ 
+ This module provides a way to link certain workspaces in a multihead setup.
+ That way, when switching to the first one the other heads display the linked
+ workspaces.
+] 
+hash: 0000008596-6ea20d92ca1642914d8923a723436e203269301954eaa21bf820b237040b9ca2
+[Update documentation of LinkWorkspaces Module
+quesel@informatik.uni-oldenburg.de**20110328072813
+ Ignore-this: da863534931181f551c9c54bc4076c05
+] 
+hash: 0000000435-3878e5199843c22901d7ee98b971f5b7fd2de4e4859bfdbaffd2a6202e925daa
+[Remove trailing whitespace in X.A.LinkWorkspaces
+Adam Vogt <vogt.adam@gmail.com>**20130514215421
+ Ignore-this: 5015ab4468e7931876eb66b019af804c
+] 
+hash: 0000000988-6a73c1e091352b7b01b86dfbf5029cce15146e0b3a8c0bed2f17f201012c9d67
+[Minor update to cabal file (adding modules & maintainership)
+Adam Vogt <vogt.adam@gmail.com>**20130514215632
+ Ignore-this: 82785e02e544e1f797799bed5b5d9be2
+] 
+hash: 0000000498-ed90f0b0d6905ad61b5fbc1bac5ca24f1b7078eeabfc2d5e1d2a95236aee09aa
+[Fix module name in comment of X.L.Fullscreen
+Adam Vogt <vogt.adam@gmail.com>**20130514215727
+ Ignore-this: cb5cf18c301c5daf5e1a2527da1ef6bf
+] 
+hash: 0000000267-b9921ec5519305f61f8891c7ccf64411275947d9905b55418976b364adf00d57
+[Remove misleading comment: we definitely don't support ghc-6.6 anymore
+Adam Vogt <vogt.adam@gmail.com>**20130514215851
+ Ignore-this: 2d071cb05709a16763d039222264b426
+] 
+hash: 0000000284-81c5e9542e9647a1f9e343992a37ca8f52656878b4acfe0dc6edf83308d53d1b
+[Remove unneeded XSync call in Layout.ShowWName
+Francesco Ariis <fa-ml@ariis.it>**20130517153341
+ Ignore-this: 4d107c680572eff464c8f6ed9fabdd41
+] 
+hash: 0000000204-5ae52421150633826e4c41b9eb3ec72f69cc2f55350ed58da7baa68e3131cf1e
+[minimal change needed to get xmonad-contrib to build with xmonad's data-default patch
+Daniel Wagner <daniel@wagner-home.com>**20130528001040
+ Ignore-this: 291e4f6cd74fc2b808062e0369665170
+] 
+hash: 0000000271-a85b216188b94ba519ede1d24082e949856ae946d507af531b35a38ac1405770
+[eliminate references to defaultConfig
+Daniel Wagner <daniel@wagner-home.com>**20130528005825
+ Ignore-this: 37ae613e4b943e99c5200915b9d95e58
+] 
+hash: 0000026296-31e323dcdac45a2e185db2d4130b5fe52b83fa7c9a5bd6dc9564562a24047324
+[use Data.Default wherever possible, and deprecate the things it replaces
+Daniel Wagner <daniel@wagner-home.com>**20130528013909
+ Ignore-this: 898458b1d2868a70dfb09faf473dc7aa
+] 
+hash: 0000051759-fcba6233a639f348ba77803261f3f3137c1ec655631efb8f0478a3d26706d742
+[Fix haddock parse error in X.A.LinkWorkspaces
+Adam Vogt <vogt.adam@gmail.com>**20130528133448
+ Ignore-this: 42f05cf8ca9e6d1ffae3bd20666d87ab
+] 
+hash: 0000000190-6703978e699e5841b9b374927cd34658bc809631420ba1bfc7774da8cc664454
+[Catch exceptions when finding commands on PATH in Prompt.Shell
+Thomas Tuegel <ttuegel@gmail.com>**20130616230219
+ Ignore-this: 5a4d08c80301864bc14ed784f1054c3f
+] 
+hash: 0000000613-0ab0f28d053c097d8cd40ea9c7957917d2af7ae4fd90d02a37a555597746ca14
+[DynamicBars-use-ExtensibleState
+gopsychonauts@gmail.com**20130618074755
+ Ignore-this: afacba51af2be8ede65b9bcf9b002a7
+ 
+ Hooks.DynamicBars was previously using an MVar and the unsafePerformIO hack (
+ http://www.haskell.org/haskellwiki/Top_level_mutable_state ) to store bar
+ state. Since ExtensibleState exists to solve these sorts of problems, I've
+ switched the file over to use unsafePerformIO instead.
+ 
+ Some functions' types had to be changed to allow access to XState, but the
+ public API is unchanged.
+ 
+] 
+hash: 0000002903-d94491106c061daf8db47735f7ae6a405ea522d4e6a8477ded57d049954f2bc2
+[Escape dzen markup and remove xmobar tags from window titles by default.
+Adam Vogt <vogt.adam@gmail.com>**20130708144813
+ Ignore-this: cf56bff752fbf78ea06d5c0cb755f615
+ 
+ The issue was that window titles, such as those set by, for example a browser,
+ could set the window title to display something like
+ 
+    <action=malicious shell command>normal title</action>
+ 
+ Which could be executed by xmobar (or dzen).
+ 
+ This adds a ppTitleSanitize which does the above functions. This way when users
+ override ppTitle, the benefits are not lost.
+ 
+ Thanks to Raúl Benencia and Joachim Breitner for bringing this to my attention.
+] 
+hash: 0000003057-0c01965c4c63fb268fa581f6df248902bc630f2444860d2a0e7edc3b19c3bfc3
+[Fix issue 551 by also getting manpath without -g flag.
+Adam Vogt <vogt.adam@gmail.com>**20130716030536
+ Ignore-this: ded2d51eb7b7697c0fdfaa8158d612df
+ 
+ Instead of taking Ondrej's approach of figuring out which man (man-db or
+ http://primates.ximian.com/~flucifredi/man/) is used by the system, just try
+ both sets of flags.
+] 
+hash: 0000000864-1ea245b9ca58914b3ea0a60dbdc31860d69be9774c031101f09409743d298af3
+[Bump version (and xmonad dependency) to 0.12
+Adam Vogt <vogt.adam@gmail.com>**20130720205857
+ Ignore-this: ce165178ca916223501f266339f1de39
+ 
+ This makes a breakage due to missing patches in core a bit more obvious.
+ Previously you would have a build failure regarding some missing identifiers
+ (def re-exported by XMonad from Data.Default), while after applying this patch
+ it will be clear that xmonad-core needs to be updated.
+] 
+hash: 0000000763-6b8831377f2d3390c5bc62941f704dc4378a233d6f39b4d7ad944d2cd0a37424
+[Haddock formatting in H.Minimize
+Adam Vogt <vogt.adam@gmail.com>**20130723155658
+ Ignore-this: 5db3186a51dec58f78954466ded339cb
+] 
+hash: 0000000243-100363d9901ad5964f9119b842d4ae6d085948b0d597d3e74e4faf4fa8cc9674
+[XMonad.Actions.UpdatePointer: document TowardsCentre
+Liyang HU <git@liyang.hu>**20130730053746
+ Ignore-this: 2d684b12e4fff0ebec254bea4a4546a3
+ 
+] 
+hash: 0000000523-a42d5b3331e88be8498f166ce0715e5827266baa9946e4ef3ebbcff31b5f326a
+[XMonad.Actions.UpdatePointer: generalise updatePointer
+Liyang HU <git@liyang.hu>**20130730071007
+ Ignore-this: 3374a62b6c63dcc152dbf843cd0577f0
+ 
+] 
+hash: 0000007440-a19557e7f0013af2c546dd3bb8d0dcb0d6efb97dbeabf55ccc0df044f128e001
+[don't pretend to be LG3D in X.C.Dmwit because this confuses modern GTK
+Daniel Wagner <daniel@wagner-home.com>**20130813211636
+ Ignore-this: 8f728dc1b4bf5e472d99419cc5920e51
+] 
+hash: 0000000493-836e82c19749a53569dc89ef674b9e6145000ce1636fde7d1026ae63b7d8d01e
+[minor documentation fix: manageDocks doesn't do anything with struts, so don't claim it does
+Daniel Wagner <daniel@wagner-home.com>**20130814125106
+ Ignore-this: a2610d6c1318ac0977abfc21d1b91632
+] 
+hash: 0000000380-d75cf08029154f5bcc79776e02fe1cc7d8b809a79ec49254806e1eb8df4a465d
+[export XMonad.Hooks.UrgencyHook.clearUrgency (issue 533)
+Adam Vogt <vogt.adam@gmail.com>**20130923031349
+ Ignore-this: dafe5763d9abcfa606f5c1a8cf5c57d6
+] 
+hash: 0000000328-111c2c3e4b75fb0b842eb2f4bc87d7361cda566e954df30df707b0704fe66fad
+[fix UrgencyHook and add filterUrgencyHook
+Adam Vogt <vogt.adam@gmail.com>**20130924224738
+ Ignore-this: 3b7c62275701e6758397977c5c09b744
+] 
+hash: 0000000937-c9b642b23c9383d2a597d5e64fe7af83628c85f02c78b1e84ae0cefcc3caf86e
+[IfMax-Layout
+Ilya Portnov <portnov84@rambler.ru>**20131201072634
+ Ignore-this: dac53f2a0505e740f05fdf03f1db0c21
+ This adds a new ("conditional") layout, IfMax, which simply runs one layout, if there are <= N windows, and else runs another layout.
+] 
+hash: 0000003237-38128e7f6b38d66f03ecaf0e4568fa9c1db631619188a5acdd4be4626b73afb5
+[Generalized XMonad.Hooks.ServerMode
+polson2@hawk.iit.edu**20131216025100
+ Ignore-this: e58da3b168a1058f32982833ea25a739
+] 
+hash: 0000007990-356790e1729da7276e40f78b67d513439e28d13c1a204c014339b435b931a7e7
+[documentation note that ServerMode is similar to wmctrl
+Adam Vogt <vogt.adam@gmail.com>**20131219180748
+ Ignore-this: 3215bdf1c698c798eca8ed7f62a0f591
+] 
+hash: 0000000284-ebd5d530c783c4100136dbb627ee4ce483d05ca9627f432a65aa2ecb14a97a22
+[fix -Wall ServerMode
+Adam Vogt <vogt.adam@gmail.com>**20131219181030
+ Ignore-this: 708dd5fc60f43dee3d1da085002052f
+] 
+hash: 0000000694-b36bcdb1c58c963d09fb5a0e399325efbeaea3e6fde6464f06d163282440620e
+[remove ServerMode tabs
+Adam Vogt <vogt.adam@gmail.com>**20131219201000
+ Ignore-this: f21448c248ec0ac289c309ed964ebcff
+] 
+hash: 0000000704-68da4f5f608d97ed52abe3272e066cd566235f83646487263991f179bf5a2e1e
+[ServerMode properly indent
+Adam Vogt <vogt.adam@gmail.com>**20131219201440
+ Ignore-this: 761b39c3e3c90b6123f068e8b1d34e5d
+] 
+hash: 0000000340-9e7bbfcc0c22acbe3840465e9a1f49c8634a3f5212cbec9880f20d62e950d779
+[expose and document X.L.IndependentScreens.marshallSort
+Daniel Wagner <daniel@wagner-home.com>**20140128212844
+ Ignore-this: 90c1437c6ffe1dbd8f4a4ed192097ec
+] 
+hash: 0000000596-189e593267a2346c64ee512dff9d18a86e97f6f02f2196c094e2cd240923653a
+[Make commandToComplete in XMonad.Prompt.Shell complete last word
+md143rbh7f@gmail.com**20140130200050
+ Ignore-this: b0fe22fdd7b9409835fd0ca069f2e01a
+ 
+ The following change from 2013-02-09 breaks shell completion for me:
+     hunk ./XMonad/Prompt/Shell.hs 65
+     +    commandToComplete _ c = c
+ 
+ It seems to be passing the entire string into compgen in order to get the file completions, but it should only pass the last word. I propose reverting this change. Comments are appreciated.
+] 
+hash: 0000000554-3ed6796f9d33b368aa850043fc343bc87bd8e1127e50c7e6b561efd81cc1af6d
+[Added SpawnNamedPipe
+cwills.dev@gmail.com**20140202143415
+ Ignore-this: 87797ffffc8d0fd088482bd0c5baf0e
+] 
+hash: 0000001692-0691d18c1b138685f6152b1a8e050434f539af6ef44a53b573664578b3c51902
+[document and cleanup SpawnNamedPipe
+cwills.dev@gmail.com**20140202211000
+ Ignore-this: b264278f1f1ab1f18b37245a5ff33136
+] 
+hash: 0000002244-c96ebc222789165cb386d14a8ce84237a28c9dd62ca79b91d545744038ef31dd
+[SpawnNamedPipe hlint cleanup
+cwills.dev@gmail.com**20140202213613
+ Ignore-this: dbb68c4c5522026bd108d0158e747b48
+] 
+hash: 0000000373-52e832cd2011a5538ec745da2df483a2a12429c2a847b7d06a6bcf16f596aa2b
+[Add side tabs to the tabbed layout.
+nrujac@gmail.com**20140213215247
+ Ignore-this: f81bafe9cb75a30ed6bbbe68cf5d66c0
+] 
+hash: 0000004637-de1004e5e9754382598b6c983b3d60eac142e09da07c55ec1096896ab7901391
+[New module: XMonad.Util.WindowState
+Dmitry Bogatov <KAction@gnu.org>**20140218100229
+ Ignore-this: 14a6fa263c423cd8cca3b2645b3930d7
+ 
+ Save almost arbitary data per window 
+] 
+hash: 0000004081-0e3aafc35616a425ebd86727d5ba2aa555294a46b41263d86a137cbf97783bc2
+[warning police
+Daniel Wagner <daniel@wagner-home.com>**20140316183747
+ Ignore-this: fd16435ccdd3fee8924723cc690cc239
+] 
+hash: 0000000399-1bfa19f453bfe3d13f8acbcb8207ab4ebda04eebb3214195f0b1778813aecd4e
+[Adding side tabs and replacing TabbarLocation with Direction2D.
+nrujac@gmail.com**20140219200811
+ Ignore-this: edabeec973b4e0d61515818367689843
+] 
+hash: 0000002985-f437e920a1e419ba1d23e165171c86e53a02fc6d2f041cd5c3fa463dc0a663a1
+[Remove unneeded context with the IfMax layout instance
+Adam Vogt <vogt.adam@gmail.com>**20140422221105
+ Ignore-this: 3b8ac316f56df6a84420754db769fb0
+ 
+ Extra constraints on instances are about as useful as -XDataTypeContexts
+] 
+hash: 0000000467-e2c845fb5062e5c468328fd794013b3061e9c8d88880305d0a9215d38addbf58
+[X.Actions.DynamicWorkspaceGroups: export new function addRawWSGroup
+Brent Yorgey <byorgey@cis.upenn.edu>**20140428142901
+ Ignore-this: a487882c9571bf91ff921d6561bb4cc6
+] 
+hash: 0000000827-f17072a35fb335c9c7555e601de05520d139031d5805484c932f4c75c766ab8e
+[Add BinarySpacePartition layout 
+benweitzman@gmail.com**20140430205848
+ Ignore-this: a85d1dc51bf54c59ae2bd9d948cc1088
+] 
+hash: 0000013702-9748daf4346f1d3bcce0f3e018111df52ac14bf8c9cf37b99600a51c5a822fa5
+[remove unused extension in BSP
+Adam Vogt <vogt.adam@gmail.com>**20140501011455
+ Ignore-this: a4962486b2aa3980536bff19a537451e
+] 
+hash: 0000000360-8229759fed842a33e7746e624c648880b146e7be9b93318b36e468bb3299518c
+[replace Bound with the equivalent Direction2D
+Adam Vogt <vogt.adam@gmail.com>**20140501011540
+ Ignore-this: b1f1c256aba07f70918fe1d693c8087b
+] 
+hash: 0000004947-314f1a7604c35bccfddc4c602333e3a718f02233925f4c91e999195a5a24edb6
+[remove trailing whitespace in L.BinarySpacePartition
+Adam Vogt <vogt.adam@gmail.com>**20140501011943
+ Ignore-this: 8dd677978992e0854801b8f254463dc2
+] 
+hash: 0000006203-cb6dca6a0a9f04cca3f8094a51046d23a2fac29e2a192bb149aeda57b66837c9
+[This patch makes the Ssh extension works with **user** arguments in ssh, .e.g ssh admin@localhost.
+linxray@gmail.com**20140504091120
+ Ignore-this: 297673e11d3049c4f127aac3e172d361
+] 
+hash: 0000000842-e0739f33ba061c0d66c3802384a606cb9ae0d1b3dc7be33a9a721f28922bb3ee
+[warning police (unused variables)
+Adam Vogt <vogt.adam@gmail.com>**20140505001242
+ Ignore-this: a15b4d844b1da4f1f1f9b6095c968705
+] 
+hash: 0000000671-fad1b1977c7144155a6905d49a762a21fc21b792253d5f143a527df5dc4653cd
+[Fix dbus-send call in XMonad.Config.Gnome
+md143rbh7f@gmail.com**20140129032114
+ Ignore-this: ed62458b55c8b34b77f73027eeee1a73
+ dbus-send --print-reply=string is invalid, but it was silently ignored until recently:
+ http://cgit.freedesktop.org/dbus/dbus/commit/tools/dbus-send.c?id=c690ee4351f99ed5e629ffcf5f4a2edcd418d103
+ I've changed XMonad.Config.Gnome to run --print-reply=literal, since that's what the old behavior was.
+] 
+hash: 0000000536-c71b347f3ff731c55c88255b57326c1045b2bf72b4418c732b11bbd2426852d9
+[XSelection: getSelection: fix connection exhaustion bug (issue #573); include warning
+gwern@gwern.net**20140601025019
+ Ignore-this: add21190fc07338b243c2241cc746119
+] 
+hash: 0000001046-65aa21cc67791256618718f1004ff7dd17c2e00dc2821f6432d1e180c7e074bd
+[add-duck-duck-go-search-engine
+eniotna.t@gmail.com**20140617174246
+ Ignore-this: 29bbfb2d07d9ddf36bf0268a4e255f81
+] 
+hash: 0000001080-d00d27cb93c6b981e5c8c20be78a004f98309d90ec948661e1dc159ab238031b
+[clean up cabal file and drop support for base < 3
+Adam Vogt <vogt.adam@gmail.com>**20140710013255
+ Ignore-this: 76b142e2b114604feac9b8e41cf71ab
+] 
+hash: 0000001504-9c5fe7d8f0d4a82a1972995445984567970361b3f1945d0df48416bcddd03b26
+[derive Applicative instances to suppress AMP warning
+Adam Vogt <vogt.adam@gmail.com>**20140710163950
+ Ignore-this: c2110d07bccc61462c3fbf73c900aaa1
+] 
+hash: 0000000781-65de3c487cc416007f9f8af94c0c152fe4062baa69fe18b47042629e74a3a971
+[debug-debug
+allbery.b@gmail.com**20140803020530
+ Ignore-this: cbb2b1d99293e3a4d02a256c2733aeb0
+ Various fixes and enhancements to DebugWindow and DebugStack. ManageDebug
+ requires these fixes, but some of them are significant even if not using
+ ManageDebug.
+] 
+hash: 0000009414-241e132bcb00fb174b5fc390d4fb8d8e0d2d383f92291b3f941cf27ef4fee000
+[debug-managehook
+allbery.b@gmail.com**20140803020601
+ Ignore-this: 51f9255b496cca79e4a53e274c400ecc
+ A set of hooks, and convenience combinators, to help with ManageHook debugging.
+ Ordinary users may well want to use debugManageHookOn in normal configs,
+ specifying a key sequence which can be pressed before running a command in
+ order to capture debug information just for that command's main window.
+ 
+ This is especially useful when trying to diagnose issues such as programs
+ that do not play well with SpawnOn, or ManageHook matching on 'title' when
+ the program does not set the window title until after it is mapped.
+] 
+hash: 0000005074-a20091d1229a49c1280683d9a7445a790b990ed0a6a360e9c8f219bda6635ed9
+[config-mate
+allbery.b@gmail.com**20140803020659
+ Ignore-this: d5de258c0a28cd5ba64a59cf37cd480a
+ Initial support for the Mate desktop environment (http://mate-desktop.org).
+ Based on existing Gnome 2 support, since Mate is a maintained fork of
+ Gnome 2.
+] 
+hash: 0000003151-81d82b0e036d73da8bd59697e3553f2899f6ed0593327b19951aded06215806c
+[use Data.Map instead of Data.Map.Strict to support containers < 0.5
+Adam Vogt <vogt.adam@gmail.com>**20140815043141
+ Ignore-this: 436d18657d8499f4ce57311e84503d9f
+] 
+hash: 0000000280-c5926353d72f4fb644310711338b4c2c06b4bcea42b4e0cf23144861458b1957
+[add-new-xmonad-prompt-pass
+eniotna.t@gmail.com**20140829131928
+ Ignore-this: 11e85dfe3d24cef88d8d89f4e7b1ec0b
+ This module provides 3 <XMonad.Prompt> to ease passwords manipulation (generate, read, remove):
+ 
+ - one to lookup passwords in the password-storage.
+ 
+ - one to generate a password for a given password label that the user inputs.
+ 
+ - one to delete a stored password for a given password label that the user inputs.
+ 
+ All those prompts benefit from the completion system provided by the module <XMonad.Prompt>.
+ 
+ The password store is setuped through an environment variable PASSWORD_STORE_DIR.
+ If this is set, use the content of the variable.
+ Otherwise, the password store is located on user's home @$HOME\/.password-store@.
+ 
+ 
+ Source:
+ 
+ - The password storage implementation is <http://git.zx2c4.com/password-store the password-store cli>.
+ 
+ - Inspired from <http://babushk.in/posts/combining-xmonad-and-pass.html>
+] 
+hash: 0000006506-769849933788cd8e6c45953009df1367f001c68965396146d8ddf58b8aec3efd
+[add filepath dependency, needed by new X.P.Pass module
+me@twifkak.com**20140913070926
+ Ignore-this: fec97086c1e66cf8a036265bd1a970a8
+] 
+hash: 0000000197-1383a78fcd982866b345d87f0c5a0f34c4581bd35ad80b0047aaf89379a5b4ed
+[reverse workspaces, so that switching to a dynamic workspace group restores the focus to the screen that was focused at group creation time
+nwfilardo@gmail.com**20140913174118
+ Ignore-this: b74c02b1892159694827e35122c2d517
+] 
+hash: 0000000436-d46c89169a5a85efa276391162b95165a8be72901c142d45c2efaee1a6d2293d
+[X.P.Shell: fix doc typo
+me@twifkak.com**20130317115516
+ Ignore-this: bdd385a9142ed039a917d135e76293fe
+] 
+hash: 0000000219-0205763609442ebc38bf31d8be91748b2b19445c18bda8026d133c754d4c8182
+[XMonad.Config.Prime, a do-notation for config
+Devin Mullins <devinmullins@gmail.com>**20140914064828
+ Ignore-this: f7397aa6e6efe5d76acebfa22c567baa
+ Note that the use of RebindableSyntax is because of the need to vary the
+ layoutHook type throughout the config. The alternative, using the existential
+ Layout type, was rejected because it required TemplateHaskell in order to look
+ nice, and TemplateHaskell is not portable.
+ 
+ I've tried to make a version of (>>) that also worked on normal monads, but
+ have had no luck as of yet. Maybe some intrepid soul can add it later.
+] 
+hash: 0000020149-2a70cd9634cbb7c61953708a4adfa6ebcbff742194286b59fd14276bbad485df
+[X.C.Prime: fix 'def' hyperlink in doc
+Devin Mullins <devinmullins@gmail.com>**20140914075352
+ Ignore-this: a1de1d81a5f140ab7d90edbf393e9bda
+] 
+hash: 0000000522-95c3cdba0246a34814b98c1792113f57287825d7a05ba19052c1e9bea30377ce
+[X.C.Prime: doc fixes
+Devin Mullins <devinmullins@gmail.com>**20140915080601
+ Ignore-this: 15e3c445a99d3b2d3a235aa76119797
+] 
+hash: 0000000861-7ab12ba1f31b70894d7d1cd2007905c3db633c101e944c43aad9d09c09a71610
+[X.C.Prime: add ifThenElse binding
+Devin Mullins <devinmullins@gmail.com>**20140924191509
+ Ignore-this: ae775c418c27301b9c12d2a233502cec
+ This is necessary for if-then-else support in the user's config.
+] 
+hash: 0000000510-b1b02992267a1dc4c25855c98e855119e481c1fc5506557c37cfc9d05b729099
+[X.C.Prime: add withWorkspaces et al.
+Devin Mullins <devinmullins@gmail.com>**20140925203034
+ Ignore-this: 65f691270110cc5de13c950d9dcb0c17
+ This allows easier configuration of workspaces and their keybindings. Required
+ generalizing the 'Prime' type, so lots of other lines changed in rather trivial
+ ways.
+] 
+hash: 0000010956-36ac40b858f2863619fcab7ede08a29c225f9c29ac65ed4e1a0b6443c4e0afbf
+[X.C.Prime: doc changes
+Devin Mullins <devinmullins@gmail.com>**20140925203037
+ Ignore-this: 51204c1a9f2e6ed21228d2910417fd21
+] 
+hash: 0000000926-b26db09bee17dbadf0d0123d2bcdaba0b1fe6877921f4eaf25fce2570d18a754
+[Add Stoppable layout for power saving
+Anton Vorontsov <anton@enomsg.org>**20140901072141
+ Ignore-this: a52805d9f3095cd7af48507847ed2fe3
+ 
+ This module implements a special kind of layout modifier, which when
+ applied to a layout, causes xmonad to stop all non-visible processes. In a
+ way, this is a sledge-hammer for applications that drain power. For
+ example, given a web browser on a stoppable workspace, once the workspace
+ is hidden the web browser will be stopped.
+ 
+ Note that the stopped application won't be able to communicate with X11
+ clipboard. For this, the module actually stops applications after a
+ certain delay, giving a chance for a user to complete copy-paste sequence.
+ By default, the delay equals to 15 seconds, it is configurable via
+ 'Stoppable' constructor.
+ 
+ The stoppable modifier prepends a mark (by default equals to "Stoppable")
+ to the layout description (alternatively, you can choose your own mark and
+ use it with 'Stoppable' constructor). The stoppable layout (identified by
+ a mark) spans to multiple workspaces, letting you to create groups of
+ stoppable workspaces that only stop processes when none of the workspaces
+ are visible, and conversely, unfreezing all processes even if one of the
+ stoppable workspaces are visible.
+ 
+ To stop the process we use signals, which works for most cases. For
+ processes that tinker with signal handling (debuggers), another
+ (Linux-centric) approach may be used. See
+ https://www.kernel.org/doc/Documentation/cgroups/freezer-subsystem.txt
+] 
+hash: 0000006809-8ca5d33a922920f124f7697d87ad9f594e42eaa519ffc2be2427202a556d8302
+[Implement proper handling of dynamically changing hostname
+Anton Vorontsov <anton@enomsg.org>**20140901072158
+ Ignore-this: 2aeac6d2161e666d40cda6a09f78b208
+ 
+ The module implements a proper way of finding out whether the window is
+ remote or local.
+ 
+ Just checking for a hostname and WM_CLIENT_MACHINE being equal is often
+ not enough because the hostname is a changing subject (without any
+ established notification mechanisms), and thus WM_CLIENT_MACHINE and the
+ hostname can diverge even for a local window.
+ 
+ This module solves the problem. As soon as there is a new window created,
+ we check the hostname and WM_CLIENT_MACHINE, and then we cache the result
+ into the XMONAD_REMOTE property.
+ 
+ Notice that XMonad itself does not know anything about hostnames, nor does
+ it have any dependency on Network.* modules. For this module it is not a
+ problem: you can provide a mean to get the hostname through your config
+ file (see usage). Or, if you don't like the hassle of handling dynamic
+ hostnames (suppose your hostname never changes), it is also fine: this
+ module will fallback to using environment variables.
+] 
+hash: 0000005717-afd68f57f258891abbdff6598053f58c66c16d5a0898e498d6c133faea87354f
+[X.C.Prime: add 'withScreens' and friends
+Devin Mullins <devinmullins@gmail.com>**20141001075250
+ Ignore-this: eba37b1ff3da265a4dcc509f538fce4d
+ The screen equivalent of 'withWorkspaces' lets you more easily define keys that
+ move/swap between screens.
+ 
+ Also, rename wsKeyspecs to wsKeys, and make a couple of doc tweaks.
+] 
+hash: 0000005007-70116a3f4b0b647e3c422189b7112150f1fc135de3917b90425b80c049e1a8c1
+[X.C.Prime: doc fixes
+Devin Mullins <devinmullins@gmail.com>**20141001075855
+ Ignore-this: dbbe00791b04df61dcd595c50333fba
+] 
+hash: 0000000420-c50d52aedad9591c3124d12fbd1a08f9cdf7264a6f7d90270040ab74d65e7eb6
+[X.A.Navigation2D: add convenience functions for setting config & keybindings
+Devin Mullins <devin.mullins@gmail.com>**20141002075757
+ Ignore-this: ed01137f03a531f73315ed503d1eb6ef
+ 1. Added 'additionalNav2DKeys' which adds keybindings for the cartesian product
+    of direction keys and (modifier, action) pairs given.
+ 2. Added 'navigation2D' which combines that with 'withNavigation2DConfig'.
+ 3. Added 'additionalNav2DKeysP' and 'navigation2DP' which do the same, but use
+    the 'additionalKeysP' syntax.
+] 
+hash: 0000006271-b5d1fb71203e21e4de591624f0c9fe3bfe084fd2203ab3898f552f46129b9676
+[X.C.Prime: doc tweaks
+Devin Mullins <devin.mullins@gmail.com>**20141002075939
+ Ignore-this: 20d6b829b810f48b5e4b4c161b39b312
+] 
+hash: 0000001050-9a2303e9c3cb2026588ed50997082a1c95774dbd87600941f8814f0086823b52
+[add filepath package dependency needed by Prompt.Pass
+Adam Vogt <vogt.adam@gmail.com>**20140909145216
+ Ignore-this: 588ec76e7fccb4219361da7024c98db4
+ 
+ filepath comes with ghc, and it's used by xmonad-core anyways
+] 
+hash: 0000000355-01b3bf5b081f79e0e1cec2a3aeb242fd1051c3f5dffcfaea5bfee447e40ca429
+[Layout.Spacing: Outer window edges now get as much spacing as inner ones
+Felix Crux <felixc@felixcrux.com>**20141219223646
+ Ignore-this: 61363e97939fe857876c8252ac5f0302
+ 
+ Layout.Spacing applies a customizable amount of space around the outside of each
+ window. At window edges where two windows meet, the total distance between them
+ is therefore twice the customized value (one space value from each window). At
+ the edge of the screen, however, the spacing is only applied once. This results
+ in uneven amounts of spacing and differently-sized gaps on the screen.
+ 
+ This patch extends the Spacing layout to include a further gap all around the
+ edge of the screen, thus making all spaces around windows equal in size.
+ 
+] 
+hash: 0000002679-9234cd065b6dde31ca89d5c19e959068c0282e655fa1faa2feee0ad6c83e7a64
+[use FiniteBitSize with ghc >= 7.8
+Adam Vogt <vogt.adam@gmail.com>**20140815051136
+ Ignore-this: 90f855fd72406fb3d2640a133d499188
+] 
+hash: 0000000470-54f2ceb359a97bef1bbf8670fc9f6a9931587eabadb9077434ad22e4f3446a8c
+[fix build with ghc-6.12
+Adam Vogt <vogt.adam@gmail.com>**20140815051214
+ Ignore-this: d4c4da527db6c8affc151dc210631b85
+] 
+hash: 0000000283-16630d93b7b53cb772ad04dd2550e13515b0a94893bdd3d3232cb3476a7d9076
+[remove unused imports
+Adam Vogt <vogt.adam@gmail.com>**20140815051234
+ Ignore-this: b2e5be31b70e6d31827e76bd8c00d200
+] 
+hash: 0000000456-ad61ea86cf4c94dec845393b629deb1c45d6e3d284a92241ea35958e06505192
+[filepath dependency for P.Pass was left out
+Adam Vogt <vogt.adam@gmail.com>**20141221214129
+ Ignore-this: 98e63d7b17ac6ebabd8a6b081f5194a1
+] 
+hash: 0000000203-83747d2f771b69b9aaf7f3c23375f774734a8a5a4c98f33b569ee0e26351c928
+[X.L.Master: Add FixMaster layout modifier
+Anton Vorontsov <anton@enomsg.org>**20141220011339
+ Ignore-this: 82e9736853287f753248af41843ceb6b
+ 
+ This layout modifier is useful for the case if you desire to add a master
+ pane that has fixed width (it's fixed even if there is just one window
+ opened). Especially nice feature if you don't want to have too wide
+ terminal in a master pane.
+ 
+ The layout is implemented as an addition to Master layout, so it reuses
+ most of the code.
+] 
+hash: 0000002032-966b760eacbab547113bdae8e3a827fd44626b4291cf9fc52257036b32945a83
+[address another bitSize/finiteBitSize warning
+Adam Vogt <vogt.adam@gmail.com>**20141222033300
+ Ignore-this: 549e519d25080c77e605dc983f0d239e
+] 
+hash: 0000000474-0181eed28a0d61de8164d231e1b24a9a2a2a27193b475de73a99c612b316cdc6
+[Generalize new workspace addition functions to support arbitrary insertion.
+nrujac@gmail.com**20141219002309
+ Ignore-this: 9f8c14b5aa9d398b3f167da0af1a8650
+ 
+ The current DynamicWorkspaces module only supports adding new workspaces
+ at the start of the list of workspaces. This means when binding workspaces
+ to keys based on the position in the list, key bindings can change 
+ as workspaces are added in removed in a far more destructive way than
+ necessary. Instead, supporting appending and arbitrary insertion allows
+ the user to determine where the new workspace should be added.
+ 
+ This patch is a straight generalization of the addHiddenWorkspace' function.
+ Rather than always using `(:)` to insert the new workspace into the list
+ of workspaces, this patches causes it to use an arbitrary list insertion
+ function instead. A few new functions are added to prevent breakage of
+ external code while exported functions are left unchanged.
+ 
+ List of new functions:
+   appendWorkspace
+   appendWorkspacePrompt
+   addWorkspaceAt
+   addHiddenWorkspaceAt
+ 
+ Existing functions were modified to call their generalized brethren where possible
+ without changing functionality. This patch should not change behavior for any
+ existing users of this module.
+ 
+] 
+hash: 0000004036-9f499d2ee4b03d6aa045533cb87457eaf551f50e5f9289dc17893ca40026695d
+[add XF86AudioMicMute to EZConfig (#582)
+Adam Vogt <vogt.adam@gmail.com>**20141222045306
+ Ignore-this: 1c91505b303e53b94da624230b3c893c
+] 
+hash: 0000000275-bb42e0341caa08946505b3d2ea7e65fe488a3af0b80deba762647c2ecce0556d
+[BinarySpacePartition downstream changes 
+benweitzman@gmail.com**20141110202259
+ Ignore-this: 42ecc2b07388ba0c7b3eac980256c17b
+ Pulled in changes from my repo for this layout on github (https://github.com/benweitzman/BinarySpacePartition)
+ Includes a new mode for resizing windows in a more intuitive way, also contains a bug fix that was preventing users from
+ resiving a window up.
+ 
+ Includes changes from github users egasimus (Adam Avramov) and SolitaryCipher (Nick)
+ 
+] 
+hash: 0000007773-7f971a89cbf2050b642279aef629a001dcb967aac6e95ee68ab556ab8ca0693c
+[add another extension to actually fix the build with ghc-7.10-RC1
+Adam Vogt <vogt.adam@gmail.com>**20150124111939
+ Ignore-this: 26d6f1b4cb6d573ccf49e6baeca853e4
+] 
+hash: 0000000298-89ad96316bd43b40e40cd26a57384d7f469e3a6f5e9970a152b1fd5e63620f0c
